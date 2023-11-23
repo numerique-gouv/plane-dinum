@@ -19,6 +19,7 @@ const nextConfig = {
       "images.unsplash.com",
       "avatars.githubusercontent.com",
       "localhost",
+      "plane-dinum.s3.sbg.io.cloud.ovh.net",
       ...extraImageDomains,
     ],
   },

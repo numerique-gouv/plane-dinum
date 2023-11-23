@@ -129,7 +129,7 @@ else:
     AWS_S3_BUCKET_NAME = os.environ.get("AWS_S3_BUCKET_NAME")
 
     # How to construct S3 URLs ("auto", "path", "virtual").
-    AWS_S3_ADDRESSING_STYLE = "auto"
+    AWS_S3_ADDRESSING_STYLE = "virtual"
 
     # The full URL to the S3 endpoint. Leave blank to use the default region URL.
     AWS_S3_ENDPOINT_URL = os.environ.get("AWS_S3_ENDPOINT_URL", "")
@@ -140,12 +140,12 @@ else:
     # Whether to enable authentication for stored files. If True, then generated URLs will include an authentication
     # token valid for `AWS_S3_MAX_AGE_SECONDS`. If False, then generated URLs will not include an authentication token,
     # and their permissions will be set to "public-read".
-    AWS_S3_BUCKET_AUTH = False
+    AWS_S3_BUCKET_AUTH = True
 
     # How long generated URLs are valid for. This affects the expiry of authentication tokens if `AWS_S3_BUCKET_AUTH`
     # is True. It also affects the "Cache-Control" header of the files.
     # Important: Changing this setting will not affect existing files.
-    AWS_S3_MAX_AGE_SECONDS = 60 * 60  # 1 hours.
+    AWS_S3_MAX_AGE_SECONDS = 7 * 24 * 60 * 60  # 1 hours.
 
     # A URL prefix to be used for generated URLs. This is useful if your bucket is served through a CDN. This setting
     # cannot be used with `AWS_S3_BUCKET_AUTH`.

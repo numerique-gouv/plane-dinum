@@ -65,7 +65,7 @@ def get_issue_props():
 
 class Workspace(BaseModel):
     name = models.CharField(max_length=80, verbose_name="Workspace Name")
-    logo = models.URLField(verbose_name="Logo", blank=True, null=True)
+    logo = models.URLField(verbose_name="Logo", blank=True, null=True, max_length=800)
     owner = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
