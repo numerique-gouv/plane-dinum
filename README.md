@@ -7,7 +7,7 @@
 
 Documentation officiel : https://docs.plane.so/self-hosting
 
-***tl;dr : il y a 4 .env, faites les moidifications nécéssaires***
+***tl;dr : il y a 4 .env, faites les modifications nécéssaires***
 
 ### Configuration de Stockage OVH S3
 - Remplacement de MinIO par OVH S3 dans les fichiers .env
