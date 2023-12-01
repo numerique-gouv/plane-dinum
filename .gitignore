@@ -73,3 +73,6 @@ pnpm-lock.yaml
 pnpm-workspace.yaml
 
 .npmrc
+
+./helm-plane-dinum/values.yaml
+
